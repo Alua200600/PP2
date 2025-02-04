@@ -127,7 +127,7 @@ def num(name):
     a = random.randint(1,20)
     attempts = 0 
     while True:
-        g = int(input())  # Пользователь вводит число
+        g = int(input())  
         attempts += 1
         if a>g:
             print("Your guess is too low.")

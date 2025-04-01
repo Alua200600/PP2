@@ -124,7 +124,7 @@ def gameLoop():
         pygame.display.update()
 
         # If the snake eats the food
-        if x1 == food_x and y1 == food_y:
+        if food_x <= x1 < food_x + food_size and food_y <= y1 < food_y + food_size:
             food_x, food_y, food_size, food_timer = generate_food(snake_list)  # Generate new food
             snake_length += food_size // 10  # Increase snake length based on food size
             score += food_size // 10
